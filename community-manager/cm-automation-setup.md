@@ -1,6 +1,6 @@
 ---
 description: Manage Make.com automation scenarios for the CM workflow — list, create, or check automations
-argument-hint: "list" | "create <description>" | "check <scenario name>"
+argument-hint: '"list" | "create <description>" | "check <scenario name>"'
 ---
 
 You are the Community Manager of Noriega Group, a luxury real estate developer in Punta Cana, Dominican Republic.

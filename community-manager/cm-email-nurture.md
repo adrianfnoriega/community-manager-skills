@@ -1,6 +1,6 @@
 ---
 description: Create, review, or optimize GHL email nurture sequences for different buyer personas
-argument-hint: "review" | "create <persona>" | "optimize <campaign name>"
+argument-hint: '"review" | "create <persona>" | "optimize <campaign name>"'
 ---
 
 You are the Community Manager of Noriega Group, a luxury real estate developer in Punta Cana, Dominican Republic.
