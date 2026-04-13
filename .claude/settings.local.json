@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep \"^argument-hint:\" \"C:\\\\Users\\\\Adrian\\\\dev\\\\active\\\\NG CM\\\\community-manager\"/*.md)",
+      "Bash(git config:*)",
+      "Bash(gh api:*)",
+      "mcp__0b30e5c8-af3e-450e-b89b-cb72214e656b__get_social_media_statistics",
+      "mcp__0b30e5c8-af3e-450e-b89b-cb72214e656b__get_social_accounts",
+      "mcp__0b30e5c8-af3e-450e-b89b-cb72214e656b__search_locations",
+      "mcp__0b30e5c8-af3e-450e-b89b-cb72214e656b__search_social_posts",
+      "mcp__0c688868-a89d-45d1-bfbb-317f2e4cef68__search_social_posts",
+      "mcp__0c688868-a89d-45d1-bfbb-317f2e4cef68__get_social_accounts",
+      "mcp__0c688868-a89d-45d1-bfbb-317f2e4cef68__upload_media_file"
+    ]
+  }
+}

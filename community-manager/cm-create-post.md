@@ -68,7 +68,18 @@ Create a social media post based on the user's request: $ARGUMENTS
 
 6. **On approval**, publish or schedule via GHL:
    - Get connected accounts via `get_social_accounts`
+   - Get the user ID via `get_users` (required field — use the admin user's ID)
    - Create the post via `create_social_post` targeting the right platform(s)
+     - `accountIds`: array of connected account IDs
+     - `summary`: caption text
+     - `type`: "post" | "story" | "reel"
+     - `status`: "scheduled" or "published"
+     - `scheduleDate`: ISO 8601 format with timezone offset (e.g. `"2026-04-14T08:30:00-04:00"`)
+     - `userId`: GHL user ID (required)
+     - `media`: array of media objects — **must use MIME type format for the `type` field** (e.g. `"image/png"`, `"image/jpeg"`, `"video/mp4"`)
+       ```json
+       [{"url": "https://assets.cdn.filesafe.space/<locationId>/media/<fileId>.png", "type": "image/png"}]
+       ```
    - Confirm with the post link/ID
 
 7. **Log the post** on Monday.com via `create_item` on the content board (if one exists -- check via `search` first).
