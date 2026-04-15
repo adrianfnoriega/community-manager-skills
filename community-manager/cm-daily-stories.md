@@ -48,11 +48,18 @@ Generate 2-3 Instagram Stories for today.
      - "Save this for later 📌"
    - **Format suggestion**: encuesta, countdown, pregunta, behind-the-scenes, avance de obra, testimonio rapido, dato CONFOTUR, lifestyle clip
 
-4. **Generate visuals** via Canva for each story:
+4. **Generate visuals** for each story — choose the tool based on story type:
+
+   **Option A — Canva** (preferred for photo/lifestyle stories or when brand kit assets are needed):
    - Fetch brand kit via `list-brand-kits`
    - Generate each story design via `generate-design` at 1080x1920 (Stories format)
    - Use brand colors, fonts, and style
    - Export via `export-design`
+
+   **Option B — Gamma** (preferred for education/CONFOTUR/data stories that are text- and stat-heavy):
+   - Fetch available themes via Gamma `get_themes` and pick the closest to Noriega brand
+   - Generate each story as a single-slide visual via Gamma `generate` — include the text overlay, CTA, and pillar context in the prompt
+   - Retrieve and share the result link via `read_gamma`
 
 5. **Present all stories to the user for approval**:
    - For each story show: theme, text overlay, CTA, design link, suggested posting time

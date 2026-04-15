@@ -12,7 +12,6 @@ All skills live in `~/.claude/commands/` and are invoked as slash commands:
 | Command | Purpose |
 |---------|---------|
 | `/cm-daily-stories` | Generate 2-3 Instagram Stories with CTAs (run daily) |
-| `/cm-daily-engage` | Review DMs/comments, draft on-brand responses, flag leads |
 
 ### Weekly Workflow (Mon–Fri)
 | Command | Purpose |
@@ -42,10 +41,13 @@ All skills live in `~/.claude/commands/` and are invoked as slash commands:
 
 | Service | Used For |
 |---------|---------|
-| GHL (GoHighLevel) | Social posting, email campaigns, CRM, conversations |
-| Canva | Design generation, brand kit, visual exports |
+| GHL (GoHighLevel) | Social posting, CRM, conversations, pipeline management |
+| MailerLite | Email campaigns, subscriber management, automations |
+| Canva | Design generation, brand kit, visual exports (single-image, stories, thumbnails) |
+| Gamma | Slide-based content, carousels, investor decks, monthly report presentations |
 | Monday.com | Content calendar, weekly plans, reporting docs |
 | Make.com | Cross-platform automation scenarios |
+| Microsoft 365 | Outlook email & calendar, SharePoint files, Teams chat |
 
 ## Brand Context
 

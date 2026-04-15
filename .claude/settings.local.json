@@ -10,7 +10,22 @@
       "mcp__0b30e5c8-af3e-450e-b89b-cb72214e656b__search_social_posts",
       "mcp__0c688868-a89d-45d1-bfbb-317f2e4cef68__search_social_posts",
       "mcp__0c688868-a89d-45d1-bfbb-317f2e4cef68__get_social_accounts",
-      "mcp__0c688868-a89d-45d1-bfbb-317f2e4cef68__upload_media_file"
+      "mcp__0c688868-a89d-45d1-bfbb-317f2e4cef68__upload_media_file",
+      "WebSearch",
+      "mcp__21c7ff42-c270-4ada-9651-7ac280dc01c8__get_social_media_statistics",
+      "mcp__21c7ff42-c270-4ada-9651-7ac280dc01c8__get_blog_posts",
+      "Bash(claude mcp:*)",
+      "Bash(cmd /c \"claude mcp add --transport http mailerlite https://mcp.mailerlite.com/mcp\")",
+      "Bash(cmd /c \"claude mcp list\")",
+      "Bash(cmd /c \"claude mcp add --transport http mailerlite https://mcp.mailerlite.com/mcp 2>&1\")",
+      "Bash(cmd /c \"dir C:\\\\Users\\\\Adrian\\\\.claude\")",
+      "Bash(zip -r /tmp/ng-community-manager.plugin . -x \"*.git/*\" -x \"community-manager/*\" -x \"*.DS_Store\")",
+      "Bash(cp /tmp/ng-community-manager.plugin \"C:/Users/Adrian/dev/active/NG CM/ng-community-manager.plugin\")",
+      "Bash(powershell -Command \"Compress-Archive -Path '.claude-plugin','skills','README.md' -DestinationPath '/tmp/ng-community-manager.zip' -Force\")",
+      "Bash(cp /tmp/ng-community-manager.zip \"C:/Users/Adrian/dev/active/NG CM/ng-community-manager.plugin\")",
+      "Bash(powershell -Command \"Compress-Archive -Path '.claude-plugin','skills','README.md' -DestinationPath 'C:/Users/Adrian/AppData/Local/Temp/ng-community-manager.zip' -Force\")",
+      "Bash(cp \"C:/Users/Adrian/AppData/Local/Temp/ng-community-manager.zip\" \"C:/Users/Adrian/dev/active/NG CM/ng-community-manager.plugin\")",
+      "Bash(powershell -Command \"Add-Type -Assembly System.IO.Compression.FileSystem; [IO.Compression.ZipFile]::OpenRead\\('C:/Users/Adrian/dev/active/NG CM/ng-community-manager.plugin'\\).Entries | Select-Object -ExpandProperty FullName | Sort-Object\")"
     ]
   }
 }

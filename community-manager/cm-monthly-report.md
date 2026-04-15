@@ -99,6 +99,14 @@ Generate the comprehensive monthly performance report.
 
 8. **Save the report** to Monday.com via `create_doc`.
 
-9. **Optionally generate a presentation** via Canva `generate-design-structured` with report highlights (executive summary as visual slides).
+9. **Optionally generate a presentation** with report highlights (executive summary as visual slides):
+
+   **Option A — Gamma** (preferred for multi-slide reports and executive decks):
+   - Fetch available themes via Gamma `get_themes` and select the closest to Noriega brand aesthetics
+   - Generate the presentation via Gamma `generate` — provide the executive summary bullets, key metrics table, and top/bottom post insights as the content prompt
+   - Retrieve and share the deck link via `read_gamma`
+
+   **Option B — Canva** (fallback, useful if individual branded graphics are needed):
+   - Use `generate-design-structured` with the report highlights formatted as slides
 
 10. **Present the full report** to the user for review and any additions.

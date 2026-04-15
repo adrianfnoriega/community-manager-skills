@@ -69,9 +69,16 @@ Repurpose content across platforms based on: $ARGUMENTS
    - Suggest placement in the newsletter layout
    - Check existing MailerLite draft campaigns via `list_campaigns` — if a draft newsletter exists for this week, add the content block to it; otherwise note it as a standalone addition
 
-4. **Generate visuals** if needed:
-   - For carousels: use Canva `generate-design` at appropriate dimensions
-   - For resizing: use Canva `resize-design`
+4. **Generate visuals** if needed — choose tool based on content type:
+
+   **For photo/lifestyle visuals and exact-dimension social graphics:**
+   - Use Canva `generate-design` at appropriate dimensions
+   - For resizing existing assets: use Canva `resize-design`
+
+   **For educational carousels, slide-style content, or LinkedIn/newsletter decks:**
+   - Use Gamma as an alternative: fetch themes via `get_themes`, then generate via `generate` with the slide-by-slide content (hook, key points, CTA slide) as the prompt
+   - Retrieve and share the result link via `read_gamma`
+   - Gamma is especially effective when the carousel is text/data-heavy (CONFOTUR explainers, ROI breakdowns, market stats)
 
 5. **Present all adaptations** to the user organized by target platform.
 
