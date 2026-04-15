@@ -1,6 +1,6 @@
 # Community Manager Skills — Noriega Group
 
-Claude Code slash commands for the Noriega Group community manager workflow. Covers daily engagement, weekly content planning, design, scheduling, and reporting.
+Claude Code slash commands for the Noriega Group community manager workflow. Covers daily stories, weekly content planning, design, scheduling, and reporting.
 
 ---
 
@@ -36,14 +36,13 @@ Claude will use the brand context from `CLAUDE.md` automatically.
 | Command | Purpose |
 |---------|---------|
 | `/cm-daily-stories` | Generate 2–3 Instagram Stories with CTAs |
-| `/cm-daily-engage` | Review DMs/comments, draft responses, flag leads |
 
 ### Weekly (Mon–Fri)
 | Command | Purpose |
 |---------|---------|
 | `/cm-monday-plan` | Plan the week's content, create Monday.com calendar |
 | `/cm-tuesday-copy` | Write captions, story scripts, email copy, YouTube descriptions |
-| `/cm-wednesday-design` | Generate Canva visuals, brief designer for complex pieces |
+| `/cm-wednesday-design` | Generate visuals via Canva or Gamma, brief designer for complex pieces |
 | `/cm-thursday-schedule` | Schedule all content via GHL Social Planner |
 | `/cm-friday-review` | Weekly metrics, engagement review, recommendations |
 
@@ -68,10 +67,13 @@ Claude will use the brand context from `CLAUDE.md` automatically.
 
 | Service | Used For |
 |---------|---------|
-| GHL (GoHighLevel) | Social posting, email campaigns, CRM |
-| Canva | Design generation and exports |
+| GHL (GoHighLevel) | Social posting, CRM, conversations, pipeline management |
+| MailerLite | Email campaigns, subscriber management, automations |
+| Canva | Design generation and exports (social images, stories, thumbnails) |
+| Gamma | Carousels, investor decks, slide-based content, monthly report presentations |
 | Monday.com | Content calendar and reporting |
 | Make.com | Cross-platform automation |
+| Microsoft 365 | Outlook email & calendar, SharePoint files, Teams chat |
 
 Make sure your Claude Code session has the relevant MCP servers connected before running commands that use these integrations.
 
