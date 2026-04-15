@@ -53,23 +53,23 @@ Schedule all approved content for the week.
    - Distribute 2-3 per day, spread across morning/midday/evening
    - Each with its CTA
 
-7. **Newsletter trigger** (if applicable):
-   - If a YouTube construction progress video was published this week, prepare the MailerLite newsletter
-   - Structure: subject line, context paragraph, video thumbnail + link, CTA to schedule call
-   - Note if this needs to be sent via MailerLite manually or triggered via Make.com
+7. **MailerLite newsletter** (if applicable):
+   - Check for any existing draft campaigns via `list_campaigns` (filter by `draft` status)
+   - If a YouTube construction progress video was published this week, or if there is newsletter content from Tuesday's copy:
+     a. Check for an existing draft to update via `update_campaign`; otherwise create a new one via `create_campaign`
+     b. Structure: subject line, context paragraph, video thumbnail + link (or featured post), CTA to schedule call
+     c. Verify subscriber groups via `list_resources` (or `list_segments`) to confirm the correct audience is targeted
+     d. Schedule the send via `schedule_campaign` at the optimal time (Tuesday or Wednesday, 9–11am)
+     e. If the newsletter relies on a Make.com trigger instead, check `scenarios_list` for an existing automation and run via `scenarios_run`
+   - Present the newsletter draft and scheduled send time for approval before confirming
 
-8. **GHL email nurturing** (if applicable):
-   - Check active campaigns via `get_email_campaigns`
-   - Verify nurture sequences are running correctly
-   - Flag any sequences that need new copy
-
-9. **Cross-platform distribution** via Make.com (if scenarios exist):
+8. **Cross-platform distribution** via Make.com (if scenarios exist):
    - Check `scenarios_list` for any automation scenarios
    - Run applicable scenarios via `scenarios_run`
 
-10. **Update Monday.com** -- mark all items as "Scheduled" via `change_item_column_values`.
+9. **Update Monday.com** -- mark all items as "Scheduled" via `change_item_column_values`.
 
-11. **Present the complete schedule** to the user:
+10. **Present the complete schedule** to the user:
     - Table format: Day | Time | Platform | Content | Status
     - Flag any items that couldn't be auto-scheduled (YouTube, MailerLite)
     - Confirm all scheduled post IDs

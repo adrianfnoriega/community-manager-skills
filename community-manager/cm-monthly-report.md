@@ -24,10 +24,10 @@ Generate the comprehensive monthly performance report.
    - Analyze by format: carousel vs reel vs static vs video
    - Analyze by language: Spanish vs English performance
 
-4. **Fetch email metrics** via GHL `get_campaign_stats` and `get_email_reports`:
-   - Newsletter performance (open rate, CTR, unsubscribes)
-   - Nurture sequence performance
-   - List growth
+4. **Fetch email metrics** via MailerLite `list_campaigns`, `get_campaign`, `get_subscriber_count`, `list_automations`, and `get_automation_activity`:
+   - Newsletter campaigns: open rate, CTR, unsubscribes for the month
+   - Nurture automations: performance by persona (inversionista, lifestyle, diaspora)
+   - Total subscriber count and net list growth (compare with previous month via `list_subscribers`)
 
 5. **Fetch dashboard/conversion data** via GHL `get_dashboard_stats` and `get_conversion_reports` if available:
    - Leads generated from social
@@ -69,10 +69,10 @@ Generate the comprehensive monthly performance report.
    **Bottom 5 Posts**
    - For each: platform, date, pillar, engagement metrics, what to improve
 
-   **Email Marketing**
+   **Email Marketing** *(all via MailerLite)*
    - Newsletter: sends, open rate, CTR, unsubscribes
-   - Nurture sequences: performance by persona
-   - List growth
+   - Nurture automations: performance by persona (inversionista, lifestyle, diaspora)
+   - List size + net subscriber growth for the month
 
    **YouTube Analytics**
    - Videos published, total views, watch time, subscriber growth

@@ -67,6 +67,7 @@ Repurpose content across platforms based on: $ARGUMENTS
    - Write a 2-3 sentence summary
    - Include a CTA to the full content
    - Suggest placement in the newsletter layout
+   - Check existing MailerLite draft campaigns via `list_campaigns` — if a draft newsletter exists for this week, add the content block to it; otherwise note it as a standalone addition
 
 4. **Generate visuals** if needed:
    - For carousels: use Canva `generate-design` at appropriate dimensions
@@ -74,7 +75,9 @@ Repurpose content across platforms based on: $ARGUMENTS
 
 5. **Present all adaptations** to the user organized by target platform.
 
-6. **On approval**, create posts via GHL `create_social_post` or save for scheduling on Thursday.
+6. **On approval**:
+   - Create social posts via GHL `create_social_post` or save for scheduling on Thursday
+   - For newsletter adaptations: create or update the MailerLite campaign via `create_campaign` or `update_campaign` with the adapted content block
 
 7. **Log to Monday.com** via `create_item` if a content board exists.
 
