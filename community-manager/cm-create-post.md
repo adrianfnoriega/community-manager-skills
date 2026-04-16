@@ -51,8 +51,13 @@ Create a social media post based on the user's request: $ARGUMENTS
    - **TikTok**: Script format with hook (first 3 seconds), body, CTA. Keep it punchy and educational.
    - **Google My Business**: Short, local-SEO focused, CTA to website or call.
 
-4. **Generate a visual** using Canva:
-   - First, fetch the Noriega brand kit via `list-brand-kits`
+4. **Source imagery — Google Drive first**:
+   - Search Google Drive via `google_drive_search` for existing photos, renders, or assets relevant to the topic (e.g. `name contains 'render'`, `fullText contains 'amenities'`, or search by folder)
+   - If suitable images are found in Drive, use those as the base for the post
+   - If the image needs branding/text overlays, import it into Canva via `upload-asset-from-url` and generate a branded design on top
+
+   **If no suitable image exists in Google Drive**, generate from scratch using Canva:
+   - Fetch the Noriega brand kit via `list-brand-kits`
    - Generate the design via `generate-design` with appropriate dimensions:
      - Instagram feed: 1080x1080 or 1080x1350
      - Stories/Reels/TikTok: 1080x1920

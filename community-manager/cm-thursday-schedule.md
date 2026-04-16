@@ -33,7 +33,7 @@ Schedule all approved content for the week.
    - Set the platform targeting (Instagram, Facebook, LinkedIn, Google My Business)
    - Set the scheduled date/time based on optimal posting times above
    - Attach the copy from Tuesday's output
-   - Attach the media from Wednesday's output
+   - **Source media**: Use images from Google Drive first (via `google_drive_search`) — project photos, renders, drone shots, lifestyle images. Fall back to Wednesday's Canva/Gamma output for designed graphics. Upload Google Drive images to GHL media library via `upload_media_file` if needed for the post URL.
    - For posts that go to multiple platforms: create separate posts with platform-adapted copy
 
 4. **LinkedIn-specific handling**:

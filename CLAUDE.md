@@ -42,6 +42,7 @@ All skills live in `~/.claude/commands/` and are invoked as slash commands:
 | Service | Used For |
 |---------|---------|
 | GHL (GoHighLevel) | Social posting, CRM, conversations, pipeline management |
+| Google Drive | Primary image source — project photos, renders, drone shots, lifestyle assets |
 | MailerLite | Email campaigns, subscriber management, automations |
 | Canva | Design generation, brand kit, visual exports (single-image, stories, thumbnails) |
 | Gamma | Slide-based content, carousels, investor decks, monthly report presentations |
