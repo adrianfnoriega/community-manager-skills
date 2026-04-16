@@ -31,6 +31,7 @@ All skills live in `~/.claude/commands/` and are invoked as slash commands:
 | Command | Purpose |
 |---------|---------|
 | `/cm-create-post` | Quick single post for any platform |
+| `/cm-create-video` | Create video content — script, thumbnail, publish (human-made or AI-generated) |
 | `/cm-repurpose` | Adapt content between platforms (blog→LinkedIn, reel→Shorts) |
 | `/cm-email-nurture` | Create/review/optimize GHL email nurture sequences |
 | `/cm-hashtag-strategy` | Generate hashtag sets per content pillar |
