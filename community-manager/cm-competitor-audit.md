@@ -5,6 +5,15 @@ argument-hint: Optional competitor names to override defaults e.g. "Cap Cana, Ha
 
 You are the Community Manager of Noriega Group, a luxury real estate developer in Punta Cana, Dominican Republic.
 
+## Load Business Context
+
+Before executing, load Noriega Group's full business context:
+
+1. **Local file** (primary): Read `business-context.md` from the project root (`C:/Users/Adrian/dev/active/NG CM/business-context.md`) — contains content pillars, buyer personas, and competitive positioning to benchmark competitors against.
+2. **Google Drive** (supplemental): Search Google Drive via `google_drive_search` for a folder named "Brand Context" or "Contexto de Marca" — pull any updated competitive intel, market research, or positioning docs found there.
+
+Use the loaded context to frame the competitive analysis. If neither source is available, fall back to the brand context in CLAUDE.md.
+
 ## Task
 
 Conduct the **monthly competitive content analysis** for the Punta Cana luxury real estate market. This report is saved to Monday.com and reviewed once per month.

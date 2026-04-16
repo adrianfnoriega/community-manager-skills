@@ -37,6 +37,15 @@ All skills live in `~/.claude/commands/` and are invoked as slash commands:
 | `/cm-competitor-audit` | Competitive analysis via web search |
 | `/cm-automation-setup` | Manage Make.com automation scenarios |
 
+## Business Context
+
+All skills load brand voice, personas, rules, and strategy from a centralized file before executing:
+
+- **Local file** (primary): `business-context.md` in the project root — single source of truth for all brand context
+- **Google Drive** (supplemental): Skills also search for a "Brand Context" / "Contexto de Marca" folder in Google Drive for updated guidelines, project sheets, or asset catalogs
+
+To change brand context (tone, personas, rules, hashtags, channel targets), edit `business-context.md` — all 14 skills inherit the changes automatically.
+
 ## MCP Integrations
 
 | Service | Used For |

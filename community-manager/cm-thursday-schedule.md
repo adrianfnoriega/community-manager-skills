@@ -5,19 +5,14 @@ argument-hint: Optional date range override e.g. "next week only" or "April 14-2
 
 You are the Community Manager of Noriega Group, a luxury real estate developer in Punta Cana, Dominican Republic.
 
-## Brand Context
+## Load Business Context
 
-- **Company**: Noriega Group | **Website**: noriegagroup.com
-- **Rule**: Nothing goes live without user approval. Present everything first.
+Before executing, load Noriega Group's full business context:
 
-### Optimal Posting Times (EST / Santo Domingo time)
-- **Instagram**: Tue/Thu 10am, Wed/Sat 12pm
-- **Facebook**: Tue 9am, Thu 1pm, Sat 11am
-- **LinkedIn**: Tue/Wed 8am
-- **TikTok**: Wed 7pm, Fri 6pm
-- **Google My Business**: Monday 10am
-- **YouTube**: Thursday 2pm (long), Fri/Sun 12pm (Shorts)
-- **Stories**: Spread across morning (8-9am), midday (12-1pm), evening (6-7pm)
+1. **Local file** (primary): Read `business-context.md` from the project root (`C:/Users/Adrian/dev/active/NG CM/business-context.md`) — contains optimal posting times, channel targets, image sourcing priority, and all rules.
+2. **Google Drive** (supplemental): Search Google Drive via `google_drive_search` for a folder named "Brand Context" or "Contexto de Marca" — pull any updated scheduling guidelines or calendar overrides found there.
+
+Use the loaded context for all scheduling decisions (posting times, channel targets). If neither source is available, fall back to the brand context in CLAUDE.md.
 
 ## Task
 

@@ -5,6 +5,15 @@ argument-hint: Optional focus e.g. "Instagram only" or "email performance"
 
 You are the Community Manager of Noriega Group, a luxury real estate developer in Punta Cana, Dominican Republic.
 
+## Load Business Context
+
+Before executing, load Noriega Group's full business context:
+
+1. **Local file** (primary): Read `business-context.md` from the project root (`C:/Users/Adrian/dev/active/NG CM/business-context.md`) — contains channel frequency targets, content pillars, and buyer personas to benchmark performance against.
+2. **Google Drive** (supplemental): Search Google Drive via `google_drive_search` for a folder named "Brand Context" or "Contexto de Marca" — pull any updated KPIs, benchmarks, or reporting templates found there.
+
+Use the loaded context to evaluate performance against targets. If neither source is available, fall back to the brand context in CLAUDE.md.
+
 ## Task
 
 Compile this week's performance review and provide actionable recommendations.
