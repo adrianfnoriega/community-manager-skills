@@ -32,7 +32,7 @@ Every skill loads business context automatically from two sources:
 1. **Local file** (primary): `business-context.md` in the project root — brand voice, personas, rules, hashtags, channel targets, posting times
 2. **Google Drive** (supplemental): Skills search for a "Brand Context" / "Contexto de Marca" folder in Google Drive for updated guidelines, project sheets, or asset catalogs
 
-To change brand context, edit `business-context.md` — all 14 skills inherit the changes.
+To change brand context, edit `business-context.md` — all 15 skills inherit the changes.
 
 ---
 
@@ -61,6 +61,7 @@ To change brand context, edit `business-context.md` — all 14 skills inherit th
 | Command | Purpose |
 |---------|---------|
 | `/cm-create-post` | Quick single post for any platform |
+| `/cm-create-video` | Create video content — script, thumbnail, publish (human-made or AI-generated) |
 | `/cm-repurpose` | Adapt content between platforms (blog→LinkedIn, reel→Shorts) |
 | `/cm-email-nurture` | Create/review/optimize MailerLite email nurture sequences |
 | `/cm-hashtag-strategy` | Generate hashtag sets per content pillar |
@@ -92,7 +93,7 @@ NG CM/
 ├── CLAUDE.md                 # Project instructions for Claude Code
 ├── business-context.md       # Centralized brand context (edit here, not in skills)
 ├── README.md
-└── community-manager/        # All 14 skill files
+└── community-manager/        # All 15 skill files
     ├── cm-monday-plan.md
     ├── cm-tuesday-copy.md
     ├── cm-wednesday-design.md
@@ -100,6 +101,7 @@ NG CM/
     ├── cm-friday-review.md
     ├── cm-daily-stories.md
     ├── cm-create-post.md
+    ├── cm-create-video.md
     ├── cm-repurpose.md
     ├── cm-email-nurture.md
     ├── cm-hashtag-strategy.md
